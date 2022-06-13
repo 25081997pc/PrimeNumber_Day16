@@ -5,7 +5,7 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Program");
-           
+            CheckPalindrome check = new CheckPalindrome();
             int n, i, flag = 0;
             int min, max;
             Console.WriteLine("Find the Prime Number within a given range");
@@ -35,7 +35,7 @@
                     if (flag == 0)
                     {
                         Console.WriteLine("{0} ", n);
-                       
+                        check.CheckPrimeIsPalindrome(n);
                     }
                 }
             }
